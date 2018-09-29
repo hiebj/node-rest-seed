@@ -4,7 +4,8 @@
   "version": "0.0.0",
   "repository": {
     "type": "git",
-    "url": "https://github/com/hiebj/node-rest-seed.git",
+    "url": "https://github/com/hiebj/node-rest-seed.git"
+  },
   "license": "UNLICENSED",
   "scripts": {
     "prettier": "prettier --write src/**/*.*js*",
@@ -17,6 +18,7 @@
     "express": "^4.13.4",
     "mime": "^1.3.4",
     "mongoose": "^5.3.0",
+    "temp-units-conv": "^1.0.2",
     "yargs": "^12.0.2"
   },
   "devDependencies": {
