@@ -2,7 +2,9 @@
   "name": "node-rest-seed",
   "description": "REST API seed",
   "version": "0.0.0",
-  "repository": "",
+  "repository": {
+    "type": "git",
+    "url": "https://github/com/hiebj/node-rest-seed.git",
   "license": "UNLICENSED",
   "scripts": {
     "prettier": "prettier --write src/**/*.*js*",
