@@ -6,7 +6,7 @@
     "type": "git",
     "url": "https://github/com/hiebj/node-rest-seed.git"
   },
-  "license": "UNLICENSED",
+  "license": "MIT",
   "scripts": {
     "prettier": "prettier --write src/**/*.*js*",
     "precommit": "./precommit.sh",
