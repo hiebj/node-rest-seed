@@ -1,5 +1,5 @@
 import { Router } from 'express'
-import { GradeModel } from './models/Grade'
+import { GradeModel } from './Grade'
 import { restControllerFactory } from './RESTController'
 import { get as getSummary } from './SummaryController'
 
