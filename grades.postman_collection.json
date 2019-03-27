@@ -44,7 +44,36 @@
 					"raw": ""
 				},
 				"url": {
+					"raw": "localhost:8080/grade",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"grade"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get summary",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
 					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:8080/summary",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"summary"
+					]
 				}
 			},
 			"response": []

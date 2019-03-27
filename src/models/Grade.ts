@@ -3,13 +3,12 @@ import { Schema, model, Model, Document } from 'mongoose'
 export interface Grade {
   student: string
   score: number
+  letter: string
 }
 
-export interface GradeDocument extends Grade, Document {
-  letter: () => string
-}
+export type GradeDocument = Grade & Document
 
-const GradeSchema = new Schema<GradeDocument>(
+const GradeSchema = new Schema<Grade & Document>(
   {
     student: { type: String, required: true },
     score: { type: Number, required: true },
@@ -20,7 +19,7 @@ const GradeSchema = new Schema<GradeDocument>(
   },
 )
 
-GradeSchema.virtual('letter', function(this: Grade) {
+GradeSchema.virtual('letter').get(function(this: Grade) {
   return this.score >= 90
     ? 'A'
     : this.score >= 80

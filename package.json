@@ -2,8 +2,11 @@
   "name": "node-rest-seed",
   "description": "REST API seed",
   "version": "0.0.0",
-  "repository": "",
-  "license": "UNLICENSED",
+  "repository": {
+    "type": "git",
+    "url": "https://github/com/hiebj/node-rest-seed.git"
+  },
+  "license": "MIT",
   "scripts": {
     "prettier": "prettier --write src/**/*.*js*",
     "precommit": "./precommit.sh",

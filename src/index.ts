@@ -21,6 +21,8 @@ console.log(`REST server listening on ${host}:${port}\n\n`)
 // TODO make mongodb start script runnable from anywhere; make it an npm script
 // make it easier to drop everything etc for dev mode
 
+// use yargs features to print out options, help
+
 // convert router.ts to a factory?
 // convert RESTController to async/await
 // add some errors more useful than 500
