@@ -1,0 +1,53 @@
+{
+	"info": {
+		"_postman_id": "9146ecd1-7478-43ed-9162-712adef567ca",
+		"name": "grades",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "create grade",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"student\": \"michelle\",\n  \"score\": 92\n}"
+				},
+				"url": {
+					"raw": "localhost:8080/grade",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"grade"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get grades",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": []
+		}
+	]
+}
