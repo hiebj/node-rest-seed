@@ -8,13 +8,16 @@
   },
   "license": "MIT",
   "scripts": {
-    "prettier": "prettier --write src/**/*.*js*",
-    "precommit": "./precommit.sh",
+    "start": "ts-node src/",
     "test": "mocha --opts ./mocha.opts",
-    "start": "ts-node src/"
+    "prettier": "prettier --write src/**/*.*ts*"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "./precommit.sh"
+    }
   },
   "dependencies": {
-    "@types/chai-subset": "^1.3.2",
     "body-parser": "^1.15.2",
     "chai-subset": "^1.6.0",
     "express": "^4.13.4",
@@ -25,6 +28,7 @@
   "devDependencies": {
     "@types/body-parser": "^1.17.0",
     "@types/chai": "^4.1.4",
+    "@types/chai-subset": "^1.3.2",
     "@types/express": "^4.16.1",
     "@types/mocha": "^5.2.2",
     "@types/mongoose": "^5.3.24",
