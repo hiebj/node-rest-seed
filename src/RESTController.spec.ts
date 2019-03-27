@@ -3,7 +3,7 @@ import { expect } from 'chai'
 import { Connection } from 'mongoose'
 
 import { dbConnect } from './dbConnect'
-import { GradeModel, GradeDocument } from './models/Grade'
+import { GradeModel, GradeDocument } from './Grade'
 import { server } from './server'
 
 const testDb = 'mongodb://127.0.0.1/gradesaver-test'

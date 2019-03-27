@@ -4,7 +4,7 @@ import { describe, beforeEach, it } from 'mocha'
 import { Connection } from 'mongoose'
 
 import { dbConnect } from './dbConnect'
-import { GradeModel } from './models/Grade'
+import { GradeModel } from './Grade'
 import { server } from './server'
 
 const testDb = 'mongodb://127.0.0.1/unit'

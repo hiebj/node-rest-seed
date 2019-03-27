@@ -1,5 +1,5 @@
 import { RequestHandler } from 'express'
-import { GradeModel } from './models/Grade'
+import { GradeModel } from './Grade'
 
 export const get: RequestHandler = (_request, response) =>
   Promise.all([
